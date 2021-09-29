@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicplayer</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="heart.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body >
+    <div>
+        <h1>Music player</h1>
+        <div class="music-player">
+            <div class="music-logo">
+                <img src="./music-banner.jpg" alt="sdfds" height="200px" width="200px">
+            </div>
+            <div class="music-timeline">
+                <marquee id="song-name" scrollamount="2"></marquee>
+            </div>
+            <audio id="music-main" src="" ></audio>
+            <div class="music-controls">
+                <i class="fas fa-step-backward"></i>
+                <span id="play"><i  class="fas fa-play"></i></span>
+                <i class="fas fa-step-forward"></i>
+            </div>
+        </div>
+    </div>
+    <aside class="switch-theme">
+        Theme switch
+    </aside>
+    <div > Play</div>
+    <script src="index.js"></script>
+</body>
+</html>
