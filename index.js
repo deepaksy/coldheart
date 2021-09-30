@@ -48,3 +48,7 @@ if("mediaSession" in navigator){
   })
 }
 
+navigator.mediaSession.setActionHandler('play',musicPlayer.play());
+navigator.mediaSession.setActionHandler('pause',musicPlayer.pause());
+navigator.mediaSession.setActionHandler('seekbackward',musicPlayer.fastSeek(-20));
+navigator.mediaSession.setActionHandler('seekforward',musicPlayer.fastSeek(20));
