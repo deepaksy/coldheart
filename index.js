@@ -36,3 +36,15 @@ document.getElementById("play").addEventListener('click',playSong);
 
 document.querySelector('#song-name').innerHTML="Cold Heart";
 
+
+let mediaSession = navigator.mediaSession;
+
+if("mediaSession" in navigator){
+  navigator.mediaSession.metadata = new MediaMetadata({
+    title : "Cold Heart",
+    artist : "Elton John, Dua Lipa",
+    album : "PAUN Remix",
+    artwork: [{src: "music-banner.jpg"}]
+  })
+}
+
